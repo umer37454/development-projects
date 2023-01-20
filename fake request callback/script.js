@@ -20,10 +20,10 @@ function b(e) {
   console.log(e)
 } */
 
-fakeReqeustCallback('books.com', function (e) {
+fakeReqeustCallback('books.com', (e) => {
   console.log('It worked')
   console.log(e)
-}, function (e) {
+}, (e) => {
   console.log('It didnt')
   console.log(e)
 })
