@@ -1,0 +1,43 @@
+body {
+  display: flex;
+  justify-content: center;
+  padding-top: 50px;
+}
+
+#main {
+  border: 2px solid lightblue;
+  display: flex;
+  padding: 10px;
+  flex-direction: column;
+  background-color: azure;
+}
+
+#head {
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+button {
+  margin-top: 5px;
+  padding: 5px;
+  font-size: 15px;
+  border: 1px solid blanchedalmond;
+  border-radius: 2px;
+}
+
+button:hover {
+  background-color: yellow;
+}
+
+@media(min-width: 50px) {
+  #main{
+    width: 60%;
+  }
+}
