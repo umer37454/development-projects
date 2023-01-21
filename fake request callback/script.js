@@ -9,17 +9,8 @@ const fakeReqeustCallback = (url, success, failure) => {
   }, 3000)
 }
 
-/* 
-function a(e) {
-  console.log('It worked')
-  console.log(e)
-} 
-
-function b(e) {
-  console.log('It didnt')
-  console.log(e)
-} */
-
+/* passing anonymous function as a parameter and also making that anony functions take 
+argu/para as we pass para/argu in it. */
 fakeReqeustCallback('books.com', (e) => {
   console.log('It worked')
   console.log(e)
