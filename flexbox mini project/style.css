@@ -108,6 +108,33 @@ ul{
   padding: 15px 20px;
 }
 
+.showmenu ul li {
+  border: 1px solid rgb(170, 170, 248);
+  margin: 10px;
+  text-align: center;
+}
+
+.showmenu a {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.showmenu a:hover{
+  color: aquamarine;
+}
+
+.sidemenu{
+  display: none;
+}
+
+.fas{
+  position: absolute;
+  top: 1.4rem;
+  right: 1.5rem;
+}
+
 @media(max-width: 768px){
   .header .container{
     flex-direction: column;
@@ -121,8 +148,23 @@ ul{
   }
 }
 
-@media (max-width: 462px) {
-  .navbar .container{
-    flex-direction: column;
+@media (min-width: 501px) {
+  .navbar .container .fas{
+    display: none;
+  }
+
+  .nav2{
+    display: none;
+  }
+}
+
+@media (max-width: 500px) {
+  .nav{
+    display: none;
+  }
+
+  .navbar .logo{
+    font-size: 25px;
+    font-weight: bold;  
   }
 }
